@@ -1,0 +1,20 @@
+<program> -> <statement_list>
+
+<statement_list> -> <statement> 
+                    | <statement_list> <statement> 
+
+<statement> -> <print_statement> 
+               | <assignment_statement> 
+
+<print_statement> -> 'print' '(' <expression> ')' ';' 
+
+<assignment_statement> -> 'identifier' = <expression> ';'
+
+<expression> -> <term> <expression_tail>
+
+<expression_tail> -> ε
+                    | <operator> <term> <expression_tail>
+
+<operator> -> '+' | '-' | '*' | '/' | '==' | '!=' | '<' | '>' | '<=' | '>='
+ 
+<term> -> 'int' | 'str' | 'bool' | 'identifier'

@@ -1,0 +1,10 @@
+$x = 5;
+$y = 6;
+$z = 7;
+$x = $y + $z - 3 * $x;
+$y = $z * $x ;
+print($y < $z);
+$s = "ahmed" ;
+print($c == $s);
+$f = false ;
+$t = true ;
